@@ -1,10 +1,10 @@
 :root {
-  --color-main-400: hsl(123, 71%, 47%);
-  --color-light-200:hsl(123, 99%, 49%);
-  --color-light-300: hsl(123, 50%, 43%);
-  --color-dark-600: hsl(123, 33%, 36%);
-  --color-dark-700: hsl(124, 20%, 26%);
-  --color-dark-800: hsl(120, 9%, 18%);
+  --color-main-400: hsl(38, 74%, 53%);
+  --color-light-200:hsl(146, 75%, 54%);
+  --color-light-300: hsl(146, 29%, 42%);
+  --color-dark-600:hsl(276, 74%, 53%);
+  --color-dark-700: hsl(39, 17%, 33%);
+  --color-dark-800: hsl(276, 17%, 33%);
 
   --font-family-main: "contest-mn", sans-serif;
   --font-family-second: "bitcount-mono-single-circle", sans-serif;
