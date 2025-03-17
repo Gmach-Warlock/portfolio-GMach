@@ -1,0 +1,410 @@
+:root {
+  --color-main-400: hsl(123, 71%, 47%);
+  --color-light-200:hsl(123, 99%, 49%);
+  --color-light-300: hsl(123, 50%, 43%);
+  --color-dark-600: hsl(123, 33%, 36%);
+  --color-dark-700: hsl(124, 20%, 26%);
+  --color-dark-800: hsl(120, 9%, 18%);
+
+  --font-family-main: "contest-mn", sans-serif;
+  --font-family-second: "bitcount-mono-single-circle", sans-serif;
+  --font-family-third: "puffin-arcade-chrome", sans-serif;
+
+  --font-family-header: var(--font-family-second);
+  --font-family-footer: var(--font-family-third);
+  --font-family-body: var(--font-family-main);
+  --font-family-a: var(--font-family-main);
+  --font-family-button: var(--font-family-third);
+
+  --font-size-400: 1rem;
+  --font-size-500: 1.5rem;
+  --font-size-600: 1.75rem;
+  --font-size-700: 2.5rem;
+  --font-size-800: 4rem;
+ 
+  --font-size-heading1: var(--font-size-800);
+  --font-size-heading2: var(--font-size-700);
+  --font-size-heading3: var(--font-size-600);
+  --font-size-main: var(--font-size-400);
+  --font-size-header: var(--font-size-500);
+  --font-size-footer: var(--font-size-400);
+  --font-size-button: var(--font-size-400);
+}
+/* ================== Contents ==============================
+1 Utility Classes
+  Colors
+  Fonts
+  Containers
+  Flow
+  Alignment
+2 Defaults
+3 Modules
+  Links
+  Buttons
+  Inputs
+4 Media Queries
+  Non-Mobile
+  Mobile
+  Tablet
+5 Layout
+  Header
+  Main
+  Footer 
+/* 1 Utility Classes */
+  /* Colors */
+
+.color-white-100 {
+  color: white;
+}
+.color-light-200 {
+  color: var(--color-light-200);
+}
+.color-light-300 {
+  color: var(--color-light-300);
+}
+.color-main-400 {
+  color: var(--color-main-400);
+}
+.color-dark-600 {
+  color: var(--color-dark-600);
+}
+.color-dark-700 {
+  color: var(--color-dark-700);
+}
+.color-dark-800 {
+  color: var(--color-dark-800);
+}
+.color-black-900 {
+  color: black;
+}
+.background-white-100 {
+  background-color: white;
+}
+.background-light-200 {
+  background-color: var(--color-light-200);
+}
+.background-light-300 {
+  background-color: var(--color-light-300);
+}
+.background-main-400 {
+  background-color: var(--color-main-400);
+}
+.background-dark-600 {
+  background-color: var(--color-dark-600);
+}
+.background-dark-700 {
+  background-color: var(--color-dark-700);
+}
+.background-dark-800 {
+  background-color: var(--color-dark-800);
+}
+.background-black-900 {
+  background-color: black;
+}
+
+  /* fonts */
+
+.font-size-heading1 {
+  font-size: var(--font-size-heading1);
+}
+.font-size-heading2 {
+  font-size: var(--font-size-heading2);
+}
+.font-size-heading3 {
+  font-size: var(--font-size-heading3);
+}
+.font-size-main {
+  font-size: var(--font-size-main);
+}
+.font-size-header {
+  font-size: var(--font-size-header);
+}
+.font-size-footer {
+  font-size: var(--font-size-footer);
+}
+.font-family-header {
+  font-family: var(--font-family-header);
+}
+.font-family-footer {
+  font-family: var(--font-family-footer);
+}
+.font-family-main {
+  font-family: var(--font-family-main);
+}
+.font-family-second {
+  font-family: var(--font-family-second);
+}
+.font-family-third {
+  font-family: var(--font-family-third);
+}
+.font-family-footer {
+  font-family: var(--font-family-footer);
+}
+.font-family-a {
+  font-family: var(--font-family-a);
+}
+.font-family-button {
+  font-family: var(--font-family-button);
+}
+
+  /* containers*/
+
+.flex-container {
+  display: flex;
+}
+.grid-container {
+  display: grid;
+}
+
+  /* flow */
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-based {
+  flex: 1 1 100%;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+.wrapper {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+  /* alignment */
+
+.center-align-items {
+  align-items: center;
+}
+.center-align-content {
+  align-content: center;
+}
+.center-align-self {
+  align-self: center;
+}
+.center-justify-items {
+  justify-items: center;
+}
+.center-justify-content {
+  justify-content: center;
+}
+.center-justify-self {
+  justify-self: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+.height-100 {
+  height: 100%;
+}
+
+/* 2 Defaults */
+
+  /* set core root defaults */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 18px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: white;
+  font-family: var(--font-family-third);
+  
+}
+
+  /* images */
+
+.logo img {
+  width: 4rem;
+  height: auto;
+}
+  
+.image-mission {
+  width: 100%;
+  height: auto;
+  margin: auto auto;
+}
+
+  /* remove default margins */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+  /* box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+  /* make images easier to layout */
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+  /* remove list styles on ol, li w/ a */
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+  /* remove animations for those who set preference */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+      scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+    /* links */
+
+    a {
+      text-decoration: none;
+      color: white;
+  }
+  a:hover,
+  a:focus {
+      color: var(--color-dark-700);
+  }
+  a:active {
+      color: var(--color-light-200);
+  }
+  
+      /*buttons*/
+  
+  button {
+      background-color: var(--color-dark-800);
+      color: white;
+      font-family: var(--font-family-button);
+      border: 1px solid black;
+      border-radius: 15px;
+      box-shadow: 0 3px 3px black;
+      padding-inline: .5rem;
+  }
+  button:hover,
+  button:focus {
+      color: var(--color-dark-700);
+  }
+  button:active {
+      columns: var(--color-light-200);
+  }
+  
+      /* inputs */
+  
+  label {
+      color: white;
+  }
+  
+  input:hover, 
+  input:focus {
+      border: 1px solid black;
+  }
+    
+  /* 4 media queries */
+      /* non mobile */
+          
+  @media (min-width: 600px) {
+      .mobile {
+          display: none;
+      }
+      header {
+          height: 31.25rem;
+      }
+      .nav-main li {
+          display: inline;
+          padding-inline: 1.25rem;
+      }
+    
+  }
+          /* mobile */
+  
+  @media (max-width: 600px) {
+      .desktop {
+          display: none;
+      }
+  
+      header {
+          height: 50rem;
+      }
+  
+      .nav-main li {
+          display: inline;
+          padding-inline: 0rem;
+      }
+  
+      
+  }
+          /* tablet */
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+      html {
+          font-size: 18px;
+      }
+  
+      .nav-main li {
+          display: inline;
+          padding-inline: .5rem;
+      }
+  }
+  
+  /*  5 layout */
+  
+      /* header section  */
+  
+ 
+  
+      /* main section  */
+  
+  
+      /* footer section  */
