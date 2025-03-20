@@ -6,21 +6,21 @@
   --color-dark-700: hsl(39, 17%, 33%);
   --color-dark-800: hsl(276, 17%, 33%);
 
-  --font-family-main: "contest-mn", sans-serif;
-  --font-family-second: "bitcount-mono-single-circle", sans-serif;
+  --font-family-main: "ice-cream-standard", sans-serif;
+  --font-family-second: "blanket", sans-serif;
   --font-family-third: "puffin-arcade-chrome", sans-serif;
 
-  --font-family-header: var(--font-family-second);
-  --font-family-footer: var(--font-family-third);
+  --font-family-header: var(--font-family-main);
+  --font-family-footer: var(--font-family-main);
   --font-family-body: var(--font-family-main);
   --font-family-a: var(--font-family-main);
-  --font-family-button: var(--font-family-third);
+  --font-family-button: var(--font-family-main);
 
   --font-size-400: 1rem;
   --font-size-500: 1.5rem;
   --font-size-600: 1.75rem;
   --font-size-700: 2.5rem;
-  --font-size-800: 4rem;
+  --font-size-800: 4.5rem;
  
   --font-size-heading1: var(--font-size-800);
   --font-size-heading2: var(--font-size-700);
@@ -225,8 +225,8 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  color: white;
-  font-family: var(--font-family-third);
+  color: var(--color-dark-800);
+  font-family: var(--font-family-main);
   
 }
 
@@ -306,12 +306,18 @@ ol[role="list"] {
 }
 
 
-
+/* 3 Modules */
+    /* li */
+    li {
+      display: inline;
+      list-style-type: none;
+      padding-inline: .5rem;
+    }
     /* links */
 
     a {
       text-decoration: none;
-      color: white;
+      color: var(--color-dark-800);
   }
   a:hover,
   a:focus {
@@ -355,56 +361,55 @@ ol[role="list"] {
       /* non mobile */
           
   @media (min-width: 600px) {
-      .mobile {
-          display: none;
-      }
-      header {
-          height: 31.25rem;
-      }
-      .nav-main li {
-          display: inline;
-          padding-inline: 1.25rem;
-      }
+    .mobile {
+        display: none;
+    }
+    main {
+        height: 50rem;
+    }
+
     
   }
           /* mobile */
   
   @media (max-width: 600px) {
-      .desktop {
-          display: none;
-      }
-  
-      header {
-          height: 50rem;
-      }
-  
-      .nav-main li {
-          display: inline;
-          padding-inline: 0rem;
-      }
-  
-      
+    .desktop {
+      display: none;
+    }
+    main {
+      height: 50rem;
+    }
   }
-          /* tablet */
+
+         /* tablet */
   
-  @media (min-width: 601px) and (max-width: 900px) {
-      html {
-          font-size: 18px;
-      }
-  
-      .nav-main li {
-          display: inline;
-          padding-inline: .5rem;
-      }
-  }
+
   
   /*  5 layout */
+
+  .splitter {
+    width: 50%;
+  }
   
       /* header section  */
   
  
   
       /* main section  */
-  
-  
+
+  .left-column {
+    width: 50%;
+  }
+
+  .right-column {
+    width: 50%;
+    background-color: var(--color-light-200);
+  }
+
+  .card-outer {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto;
+    transform: rotate(45deg);
+  }
       /* footer section  */
