@@ -518,4 +518,15 @@ header img {
   transform: translate(-25%, 10%);
 }
 
+#portfolio {
+  display: none;
+}
+
+#about {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
     /* footer section  */
