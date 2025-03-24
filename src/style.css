@@ -329,8 +329,7 @@ ol[role="list"] {
     text-decoration: none;
     color: var(--color-dark-800);
 }
-a:hover,
-a:focus {
+a:hover {
     color: var(--color-dark-700);
 }
 a:active {
@@ -345,15 +344,19 @@ button {
     font-family: var(--font-family-button);
     border: 1px solid black;
     border-radius: 15px;
-    box-shadow: 0 3px 3px black;
+    box-shadow: 0 3px 3px black, inset 2px 2px var(--color-dark-800);
     padding-inline: .5rem;
 }
-button:hover,
-button:focus {
+button:hover {
     color: var(--color-dark-700);
+    box-shadow: 0 3px 3px black, inset 2px 2px var(--color-dark-800);
+
 }
 button:active {
-    columns: var(--color-light-200);
+    color: var(--color-light-200);
+    box-shadow: 0 0px 0px black, inset 2px 2px var(--color-dark-800);
+    margin-top: 3px;
+    margin-bottom: -3px;
 }
 
     /* inputs */
@@ -513,12 +516,13 @@ header img {
 }
 
 .card-inner img {
-  width: 20rem;
+  width: 18rem;
   height: auto;
 }
 
 .hero-ctas {
-  transform: translate(-25%, 10%);
+  position: relative;
+  bottom: 20%;
 }
 
 /* portfolio section */
@@ -526,7 +530,7 @@ header img {
 #portfolio {
   display: none;
   position: relative;
-  bottom: 25%;
+  bottom: 90%;
   
 }
 
