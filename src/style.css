@@ -171,9 +171,13 @@
 .overflow-scroll {
   overflow: scroll;
 }
-.wrapper {
+.wrapper1 {
   margin-inline: auto;
   padding-inline: 1rem;
+}
+.wrapper2 {
+  margin-inline: auto;
+  padding-inline: 2rem;
 }
 .display-none {
   display: none;
@@ -325,8 +329,7 @@ ol[role="list"] {
     text-decoration: none;
     color: var(--color-dark-800);
 }
-a:hover,
-a:focus {
+a:hover {
     color: var(--color-dark-700);
 }
 a:active {
@@ -341,15 +344,19 @@ button {
     font-family: var(--font-family-button);
     border: 1px solid black;
     border-radius: 15px;
-    box-shadow: 0 3px 3px black;
+    box-shadow: 0 3px 3px black, inset 2px 2px var(--color-dark-800);
     padding-inline: .5rem;
 }
-button:hover,
-button:focus {
+button:hover {
     color: var(--color-dark-700);
+    box-shadow: 0 3px 3px black, inset 2px 2px var(--color-dark-800);
+
 }
 button:active {
-    columns: var(--color-light-200);
+    color: var(--color-light-200);
+    box-shadow: 0 0px 0px black, inset 2px 2px var(--color-dark-800);
+    margin-top: 3px;
+    margin-bottom: -3px;
 }
 
     /* inputs */
@@ -509,12 +516,13 @@ header img {
 }
 
 .card-inner img {
-  width: 20rem;
+  width: 18rem;
   height: auto;
 }
 
 .hero-ctas {
-  transform: translate(-25%, 10%);
+  position: relative;
+  bottom: 20%;
 }
 
 /* portfolio section */
@@ -522,7 +530,8 @@ header img {
 #portfolio {
   display: none;
   position: relative;
-  bottom: 25%;
+  bottom: 90%;
+  
 }
 
 #portfolio img {
@@ -530,11 +539,45 @@ header img {
 
 }
 
+#portfolio .grid-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 100%;
+}
+
+#portfolio .box {
+  border: 1px solid black;
+}
+
+#portfolio a {
+  grid-column: 1 / span 1;
+}
+
+#portfolio b {
+  grid-column: 2 / span 1;
+}
+
+.grid-container.box img {
+  width: 10rem;
+  height: auto;
+}
+
+#portfolio .card {
+  background-color: var(--color-light-200);
+}
+
+/* About section */
+
 #about {
   display: none;
 }
 
+/* Contact section */
+
 #contact {
   display: none;
 }
+
+
+
     /* footer section  */
