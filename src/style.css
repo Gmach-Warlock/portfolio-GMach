@@ -270,7 +270,6 @@ body {
 img,
 picture,
 svg {
-  max-width: 100%;
   display: block;
 }
 
@@ -518,8 +517,17 @@ header img {
   transform: translate(-25%, 10%);
 }
 
+/* portfolio section */
+
 #portfolio {
   display: none;
+  position: relative;
+  bottom: 25%;
+}
+
+#portfolio img {
+  width: 30rem;
+
 }
 
 #about {
