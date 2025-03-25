@@ -496,7 +496,6 @@ header img {
 
 .right-column {
   width: 50%;
-  background-color: var(--color-light-200);
 }
 
 .card-outer {
@@ -525,17 +524,23 @@ header img {
   bottom: 20%;
 }
 
+/* hero */
+
+.hero .right-column {
+  background-color: var(--color-light-200);
+}
+
 /* portfolio section */
 
 #portfolio {
   display: none;
   position: relative;
-  bottom: 90%;
+  bottom: 95%;
   
 }
 
 #portfolio img {
-  width: 12rem;
+  width: 9rem;
   height: auto;
 }
 
@@ -562,20 +567,38 @@ header img {
   background-color: transparent;
 }
 
-figcaption {
+#portfolio figcaption {
   display: none;
 }
 
 /* About section */
 
+#about h2,
+#about h3,
+#about h4,
+#about span {
+  text-align: center;
+}
+
 #about {
   display: none;
+  position: relative;
+  bottom: 95%;
 }
+
+#about h2 {
+  position: relative;
+  bottom: 75%;
+}
+
 
 /* Contact section */
 
 #contact {
   display: none;
+  position: relative;
+  top: 95%;
+
 }
 
 
