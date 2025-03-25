@@ -57,6 +57,9 @@ const contactToggle = () => {
     }
 };
 
+/* create a function which enlarges then shrinks an image upon clicking it */
+
+let toggleItems = document.getElementsByClassName('toggleItem');
 
 
 

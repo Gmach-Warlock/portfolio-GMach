@@ -541,30 +541,25 @@ header img {
 
 #portfolio .grid-container {
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   max-width: 100%;
 }
 
 #portfolio .card {
-  border: 1px solid black;
   margin: 1rem;
 }
 
-#portfolio a {
-  grid-column: 1 / span 1;
+#portfolio .top-row {
+  height: 35%;
 }
 
-#portfolio b {
-  grid-column: 2 / span 1;
+#portfolio .bottom-row {
+  height: 65%;
 }
 
-.grid-container.box img {
-  width: 10rem;
-  height: auto;
-}
 
 #portfolio .card {
-  background-color: var(--color-light-200);
+  background-color: transparent;
 }
 
 figcaption {
