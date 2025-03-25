@@ -535,18 +535,19 @@ header img {
 }
 
 #portfolio img {
-  width: 30rem;
-  height: 25rem;
+  width: 12rem;
+  height: auto;
 }
 
 #portfolio .grid-container {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   max-width: 100%;
 }
 
-#portfolio .box {
+#portfolio .card {
   border: 1px solid black;
+  margin: 1rem;
 }
 
 #portfolio a {
@@ -564,6 +565,10 @@ header img {
 
 #portfolio .card {
   background-color: var(--color-light-200);
+}
+
+figcaption {
+  display: none;
 }
 
 /* About section */
