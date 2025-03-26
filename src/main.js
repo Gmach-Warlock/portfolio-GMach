@@ -61,5 +61,11 @@ const contactToggle = () => {
 
 let toggleItems = document.getElementsByClassName('toggleItem');
 
+const toggleSize = element => {
+    element.style.display = 'none';
+}
 
+for (let i=0; i<toggleItems.length; i++) {
+    toggleItems[i].addEventListener('click', toggleSize);
+}
 
