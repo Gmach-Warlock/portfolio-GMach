@@ -59,13 +59,14 @@ const contactToggle = () => {
 
 /* create a function which enlarges then shrinks an image upon clicking it */
 
-let toggleItems = document.getElementsByClassName('toggleItem');
+let toggleItems = document.querySelectorAll('toggleItems');
+for (let i=0; i<toggleItems.length; i++) {
+    toggleItems[i].addEventListener('click', toggleSize);
+}
 
 const toggleSize = element => {
     element.style.display = 'none';
 }
 
-for (let i=0; i<toggleItems.length; i++) {
-    toggleItems[i].addEventListener('click', toggleSize);
-}
+
 
