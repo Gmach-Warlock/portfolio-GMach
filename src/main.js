@@ -23,22 +23,6 @@ const portfolioToggle = () => {
     }
 };
 
-// about section toggle
-
-let sectionAbout = document.getElementById("about");
-let aboutIsVisible = false; 
-
-const aboutToggle = () => {    
-    
-    
-    if (aboutIsVisible) {
-        sectionAbout.style.display = 'none';
-        aboutIsVisible = false;
-    } else {
-        sectionAbout.style.display = 'block';
-        aboutIsVisible = true;
-    }
-};
 
 // contact section toggle
 
